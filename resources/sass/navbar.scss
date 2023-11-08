@@ -1,0 +1,15 @@
+.navbar{
+    padding: 15px 15px 15px 20px;
+    background-color: #1e2124;
+
+    .burger-icon{
+        font-size: 20px;
+        color: $purple2;
+
+        &:hover{
+            cursor: pointer;
+            color: purple;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+}

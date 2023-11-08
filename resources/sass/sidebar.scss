@@ -1,0 +1,101 @@
+.sidebar{
+    width: 320px;
+    height: 100vh;
+    background-color: #1e2124;
+    color: lightgray;
+    font-size: 16px;
+    
+    .logo{
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        
+        h1{
+            padding: 20px;
+            text-transform: uppercase;
+            text-wrap: wrap;
+            font-size: 18px;
+        }
+    }
+
+    .sidebar-container{
+        padding: 20px;        
+
+        .admin-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+    
+            .img-welcome{
+                display: flex;
+                justify-content: flex-start;
+    
+                align-items: center;
+                gap: 10px;
+    
+                .img-cont{
+                    width: 50px;
+                    height: 50px;
+        
+                    img{
+                        width: 100%;
+                        border-radius: 100%;
+                    }
+                }
+    
+                .welcome{
+                    font-size: 14px;
+                    // font-weight: bold;
+                    font-style: italic;
+    
+                    .admin-name{
+                        font-weight: bold;
+                    }
+                }
+            }
+    
+            
+        }
+    
+        h3{
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 15px 0;
+        }
+    
+        .sidebar-list{
+            .list-pair{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 15px 0;
+    
+                .icon-container{
+                    width: 30px;
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 10px;
+    
+                    i{
+                        color: #7289da;
+                        font-size: 17px;
+                    }
+                }
+    
+                a{
+                    text-decoration: none;
+                    color: lightgray;
+    
+                    &:hover{
+                        color: white;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
