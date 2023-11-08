@@ -32,7 +32,7 @@
                     <i class="fa-solid fa-house"></i>
                 </span>
                 
-                <a href="#">Dashboard</a>
+                <a href={{ route('home') }}>Dashboard</a>
             </div>
     
             <div class="list-pair">
@@ -40,7 +40,7 @@
                     <i class="fa-solid fa-user"></i>
                 </span>
                 
-                <a href="#">Members</a>
+                <a href={{ route('members') }}>Members</a>
             </div>
             <div class="list-pair">
                 <span class="icon-container">

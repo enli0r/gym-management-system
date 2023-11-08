@@ -9,6 +9,8 @@
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/f3aeed9828.js" crossorigin="anonymous"></script>
+
+    <livewire:styles />
 </head>
 <body>
 
@@ -23,5 +25,6 @@
     
 
     @vite(['resources/sass/app.scss'])
+    <livewire:scripts />
 </body>
 </html>
