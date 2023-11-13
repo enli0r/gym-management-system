@@ -4,6 +4,7 @@
             <form class="search-form" action="">
                 <input type="search" placeholder="Ex: Milan Nikolic">
 
+                <i class="fa-solid fa-magnifying-glass"></i>
             </form>
 
             {{-- <i class="fa-solid fa-magnifying-glass"></i> --}}

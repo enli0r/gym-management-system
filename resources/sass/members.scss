@@ -7,11 +7,11 @@
         justify-content: space-between;
         margin-bottom: 40px;
         gap: 30px;
-        max-width: 980px;
-        width: 100%;
 
         .search-form{
+            max-width: 750px;
             width: 100%;
+            position: relative;
 
             input{
                 width: 100%;
@@ -19,6 +19,19 @@
                 border: none;
                 border-radius: 10px;
                 background-color: white;
+            }
+
+            i{
+                position: absolute;
+                z-index: 2;
+                transform: translateY(-50%);
+                font-size: 16px;
+                color: $purple3;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                font-size: 17px;
+                font-weight: bold;
             }
 
         }
