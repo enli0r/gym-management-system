@@ -1,5 +1,8 @@
 .index-container{
     padding: 20px;
+    margin-left: 250px;
+    height: 100vh;
+    
 
     .cards{
         display: flex;
@@ -64,11 +67,21 @@
         }
     }
 
-    h3{
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #f4f4f3;
+    .section-header{
         margin-bottom: 20px;
+
+        h3{
+            font-size: 22px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: 	#36393e;
+            margin-bottom: 10px;
+        }
+    
+        small{
+            color: rgb(156, 156, 156);
+        }
     }
+
+    
 }

@@ -1,7 +1,11 @@
 <x-layout>
     <section class="index-container">
-        <h3>Statistics</h3>
-
+        <div class="section-header">
+            <h3>Statistics</h3>
+            <small>Here are the most important stats.</small>
+        </div>
+        
+        
         <div class="cards">
             <div class="card total-members">
                 <div class="card-number-icon">
@@ -54,8 +58,6 @@
                 <h3 class="card-title">Pending payments</h3>
             </div>
         </div>
-
-        <h3>Analytics</h3>
         
 
     </section>
