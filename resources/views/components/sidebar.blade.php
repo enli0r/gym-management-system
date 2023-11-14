@@ -6,7 +6,7 @@
             <small>Admin dashboard</small>
         </div>
         {{-- <hr> --}}
-    
+
         <div class="admin-info">
     
             <div class="img-welcome">
@@ -18,9 +18,16 @@
             </div>
     
             <i class="fa-solid fa-right-to-bracket"></i>
+
+            
         
-        </div>
+        </div> 
     
+        <div class="auth-buttons">
+            <a class="login-button" href="{{ route('login') }}">Login</a>
+            <a class="login-button" href="{{ route('register') }}">Register</a>
+        </div>
+
         <div class="navigation-container">
             <h3>Navigation</h3>
             

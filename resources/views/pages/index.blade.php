@@ -1,4 +1,6 @@
 <x-layout>
+
+
     <section class="index-container">
         <div class="section-header">
             <h3>Statistics</h3>

@@ -23,7 +23,7 @@
                     Filter
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
-    
+                
                 <button class="sort-button"><span></span>
                     Sort
                     <i class="fa-solid fa-chevron-down"></i>
@@ -37,7 +37,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th class="cell-center">#</th>
                         <th>First name</th>
                         <th>Last name</th>
                         <th>JMBG</th>
@@ -45,7 +45,7 @@
                         <th>Price</th>
                         <th>Started</th>
                         <th>Ended</th>
-                        <th>Is active</th>
+                        <th class="cell-center">Activity</th>
                         <th class="row-action"></th>
                     </tr>
                 </thead>
@@ -64,7 +64,8 @@
                             <td>{{ $member->membership_price }}</td>
                             <td>{{ $member->date_started }}</td>
                             <td>{{ $member->date_ended }}</td>
-                            <td class="cell-center">{{ $member->is_active }}</td>
+                            
+                            <td class="cell-center">@if ($member->is_active == 1) active @else inactive @endif</td>
                             <td class="cell-center"><svg fill="#000000" height="10" width="10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="0 0 32.055 32.055" xml:space="preserve">
                            <g>

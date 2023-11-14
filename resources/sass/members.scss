@@ -1,6 +1,7 @@
 .members{
     padding: 20px;
     margin-left: 250px;
+    height: 100vh;
 
     .search-container{
         display: flex;
@@ -9,7 +10,6 @@
         gap: 30px;
 
         .search-form{
-            max-width: 750px;
             width: 100%;
             position: relative;
 
@@ -17,7 +17,7 @@
                 width: 100%;
                 padding: 12px 10px;
                 border: none;
-                border-radius: 10px;
+                border-radius: 5px;
                 background-color: white;
             }
 
@@ -37,19 +37,20 @@
         }
 
         .add-member{
-            border-radius: 10px;
+            border-radius: 5px;
             padding: 10px 15px;
             width: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            background: rgb(239,83,81);
+            background: #AC3931;
             color: white;
-            border: 1px solid rgba(239, 83, 81, 0.3);
+            border: 1px solid #AC3931;
 
             &:hover{
                 background-color: rgb(240, 55, 52);
+                border-color: rgb(240, 55, 52);
                 transition: all 0.2s ease-in-out;
                 cursor: pointer;
             }
@@ -86,40 +87,39 @@
         .action-buttons{
             display: flex;
             align-items: center;
-            gap: 10px;
+            color: #f4f4f3;
+            gap: 1px;
 
             .filter-button, .sort-button{
                 border: none;
                 padding: 12px 10px;
-                border-radius: 10px;
                 color: white;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
+                background-color: #282b30;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: black;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+
+                }
                 
             }
 
             .filter-button{
-                background-color: #4DAA57;
-                width: 100px;
-
-                &:hover{
-                    cursor: pointer;
-                    background-color: #44c751;
-                    transition: all 0.2s ease-in-out;
-                }
+                width: 150px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
             }
 
             .sort-button{
-                background-color: #437f6c;
-                width: 100px;
-                
-                &:hover{
-                    cursor: pointer;
-                    background-color: #3a9377;
-                    transition: all 0.2s ease-in-out;
-                }
+                width: 150px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
             }
     
         } 
@@ -146,29 +146,32 @@
                 background-color: $purple2;
                 color: white;
                 font-weight: bold;
+                text-align: center;
                 
                 th{
-                    padding: 15px 5px;
+                    padding: 10px 10px;
+                    // border: 1px solid #F3F2F7;
                 }
 
                 tr th:first-child {
-                    border-top-left-radius: 10px;
-                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
                 }
 
                 tr th:last-child {
-                    border-top-right-radius: 10px;
-                    border-bottom-right-radius: 10px;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
                   }
             }
 
             tbody{
                 color: black;
-                border-radius: 20px;
+                border-radius: 5px;
                 background-color: white;
                 
                 td{
-                    padding: 10px 5px;
+                    padding: 10px 10px;
+                    border: 1px solid #F3F2F7;
                 }
 
                 tr:first-child td:first-child {
