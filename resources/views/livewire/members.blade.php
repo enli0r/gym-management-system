@@ -1,5 +1,5 @@
 <div>
-    <div class="members">
+    <div x-data="{ open: false }" class="members">
         <div class="search-container">
             <form class="search-form" action="">
                 <input type="search" placeholder="Ex: Milan Nikolic">
@@ -8,9 +8,12 @@
             </form>
 
             {{-- <i class="fa-solid fa-magnifying-glass"></i> --}}
-            <button class="add-member"><span><i class="fa-solid fa-plus"></i></span>Add new member</button>           
+            <button x-on:click="open = ! open" class="add-member"><span><i class="fa-solid fa-plus"></i></span>Add new member</button>           
         </div>
 
+        <div x-show="open" class="member-create">
+            <livewire:member-create />
+        </div>
 
         <div class="table-actions">
             <div class="members-text">
@@ -82,13 +85,6 @@
         </div>
 
        
-    </div>
-      
-    <div class="member-create-container">
-
-        <div class="div">
-            <livewire:member-create />
-        </div>
     </div>
     
 </div>
