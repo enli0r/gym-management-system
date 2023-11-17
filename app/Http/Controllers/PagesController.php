@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function index(){
+    public function index() 
+    {
         return view('pages.index');
     }
 
-    public function members(){
+    public function members()
+    {
         return view('pages.all_members');
     }
 }

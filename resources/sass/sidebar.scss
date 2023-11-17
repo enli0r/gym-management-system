@@ -43,8 +43,18 @@
         margin-bottom: 50px;
         gap: 20px;
 
-        i{
-            color: $purple2;
+        .logout-btn{
+            border: none;
+            background-color: transparent;
+            color: $purple3;
+            
+            i{
+                font-size: 16px;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
         }
 
         .img-welcome{

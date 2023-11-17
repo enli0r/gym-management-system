@@ -14,19 +14,19 @@
                     <img src="../public/img/user.jpg" alt="">
                 </div>
     
-                <p class="welcome-msg">Hello, <span class="name">Milan</span></p>
+                @auth
+                    <p class="welcome-msg">Hello, <span class="name">{{ auth()->user()->name }}</span></p>
+                @endauth
+
             </div>
     
-            <i class="fa-solid fa-right-to-bracket"></i>
-
-            
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" name="logout" class="logout-btn"><i class="fa-solid fa-right-to-bracket"></i></button>
+            </form>
         
         </div> 
-    
-        <div class="auth-buttons">
-            <a class="login-button" href="{{ route('login') }}">Login</a>
-            <a class="login-button" href="{{ route('register') }}">Register</a>
-        </div>
+
 
         <div class="navigation-container">
             <h3>Navigation</h3>

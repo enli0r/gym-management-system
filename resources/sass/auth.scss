@@ -3,14 +3,14 @@
 }
 
 .auth-container{
-    max-width: 1000px;
+    max-width: 900px;
     width: 100%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
 
     img{
-        width: 400px;
+        width: 300px;
     }
 }
 
@@ -24,6 +24,7 @@
         font-size: 24px;
         font-weight: 800;
         color: #1e2124;
+        margin-bottom: 5px;
 
         span{
             font-size: 30px;
@@ -34,5 +35,102 @@
     small{
         display: block;
         margin-bottom: 60px;
+        color: rgb(153, 153, 153);
+    }
+
+    form{
+        label{
+            font-size: 12px;
+            // font-weight: bold;
+        }
+
+        .text-input{
+            width: 100%;
+            border-radius: 5px;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: lightgray;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: none;
+            background-color: #f4f4f3;
+            color: #1e2124;
+            font-size: 12px;
+        }
+
+        .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            align-items: center;
+
+            input{
+                width: 20px;
+            }
+
+            .remember-me{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+            }
+
+            a{
+                font-size: 12px;
+            }
+        }
+
+
+        .buttons-container{
+            width: 100%;
+            text-align: center;
+
+            .login-btn, .login-btn2{
+                padding: 10px 15px;
+                background-color: $purple3;
+                color: white;
+                font-weight: bold;
+                border: none;
+                width: 100%;
+                display: block;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            .login-btn{
+                margin-top: 30px;
+            }
+
+
+            p{
+                color: rgb(168, 168, 168);
+                margin: 30px 0 10px 0;
+            }
+
+            .register-btn{
+                padding: 10px 15px;
+                background-color: black;
+                color: lightgray;
+                font-weight: bold;
+                border: none;
+                width: 100%;
+                display: block;
+                text-decoration: none;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: black;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+        }
+        
     }
 }

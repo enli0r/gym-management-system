@@ -9,8 +9,14 @@
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/f3aeed9828.js" crossorigin="anonymous"></script>
+    
+    {{-- Alpinejs --}}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <livewire:styles />
+
+
+    @vite(['resources/css/app.css', 'resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
 
@@ -22,9 +28,7 @@
             {{$slot}}
         </section>
     </div>
-    
 
-    @vite(['resources/sass/app.scss'])
     <livewire:scripts />
 </body>
 </html>

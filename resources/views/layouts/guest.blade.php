@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/sass/app.scss'])
     </head>
     <body class="auth-body">
         
@@ -25,10 +26,9 @@
             </div>
 
             
-            <img src="../public/img/arnold.png" alt="">
+            <img src="../public/img/pxfuel3.jpg" alt="">
         </div>
         
-        @vite(['resources/sass/app.scss'])
 
     </body>
 </html>
