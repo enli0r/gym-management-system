@@ -26,7 +26,7 @@
             </div>
 
             
-            <img src="../public/img/pxfuel3.jpg" alt="">
+            <img src="img/pxfuel3.jpg" alt="">
         </div>
         
 

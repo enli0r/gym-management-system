@@ -1,5 +1,4 @@
-<x-layout>
-
+<x-layouts.app>
 
     <section class="index-container">
         <div class="section-header">
@@ -65,4 +64,4 @@
     </section>
 
 
-</x-layout>
+</x-layouts.app>

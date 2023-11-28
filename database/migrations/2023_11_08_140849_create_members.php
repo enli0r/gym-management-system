@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('jmbg')->unique();
             $table->string('email')->unique();
             $table->decimal('membership_price');
+            $table->text('phone');
             $table->date('date_started');
             $table->date('date_ended');
             $table->boolean('is_active')->default(1);

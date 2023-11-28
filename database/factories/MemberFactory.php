@@ -24,6 +24,7 @@ class MemberFactory extends Factory
             'jmbg' => fake()->numerify('##########'),
             'email' => fake()->email(),
             'membership_price' => 3000,
+            'phone' => '0637845612',
             'date_started' => Carbon::now(),
             'date_ended' => Carbon::now()->addDays(30),
             'is_active' => true

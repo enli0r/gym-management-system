@@ -11,7 +11,7 @@
     
             <div class="img-welcome">
                 <div class="img-cont">
-                    <img src="../public/img/user.jpg" alt="">
+                    <img src="img/user.jpg" alt="">
                 </div>
     
                 @auth

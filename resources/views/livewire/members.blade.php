@@ -1,5 +1,6 @@
 <div>
     <div x-data="{ open: false }" class="members">
+        
         <div class="search-container">
             <form class="search-form" action="">
                 <input type="search" placeholder="Ex: Milan Nikolic">
