@@ -64,6 +64,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border: 1px solid red;
+        position: relative;
 
         .members-text{
             display: flex;
@@ -123,6 +125,33 @@
             }
     
         } 
+
+        .sort-container{
+            background-color: #282b30;
+            color: white;
+            border-radius: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            transform: translateY(100%);
+
+            .sort-list{
+                list-style: none;
+                text-align: center;
+                
+                .sort-item{
+                    padding: 10px 15px;
+                    width: 150px;
+
+                    &:hover{
+                        background-color: #36393e;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 
 

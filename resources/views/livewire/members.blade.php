@@ -13,11 +13,13 @@
             <button x-on:click="open = ! open" class="add-member"><span><i class="fa-solid fa-plus"></i></span>Add new member</button>           
         </div>
 
-        <div x-show="open" class="member-create">
+        <div x-cloak x-show="open" class="member-create">
             <livewire:member-create />
         </div>
 
-        <div class="table-actions">
+        <div 
+        x-data="{showSort:false}"
+        class="table-actions">
             <div class="members-text">
                 <h1>All members</h1>
                 <small>Here's a list of all-time gym members.</small>
@@ -29,13 +31,28 @@
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
                 
-                <button class="sort-button"><span></span>
+                <button 
+                x-on:click='showSort =! showSort'
+                class="sort-button dropdown-btn"><span></span>
                     Sort
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
             
+            <div
+            x-cloak
+            x-show="showSort"
+            x-on:click.away="showSort = false"
 
+            x-transition:enter="custom-enter" x-transition:enter-start="custom-enter" x-transition:enter-end="custom-enter-active" x-transition:leave="custom-leave" x-transition:leave-start="custom-leave" x-transition:leave-end="custom-leave-active"
+
+            class="sort-container dropdown">
+
+                <ul class="sort-list">
+                    <li class="sort-item">Newest</li>
+                    <li class="sort-item">Oldest</li>
+                </ul>
+            </div>
         </div>
         
         <div class="members-container">
