@@ -2,8 +2,9 @@
     <div x-data="{ open: false }" class="members">
         
         <div class="search-container">
-            <form class="search-form" action="">
-                <input type="search" placeholder="Ex: Milan Nikolic">
+            <form class="search-form" action="" method="post">
+                @csrf
+                <input wire:model.live='search' type="text" placeholder="Ex: Milan Nikolic">
 
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>

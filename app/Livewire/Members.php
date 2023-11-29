@@ -8,19 +8,18 @@ use Livewire\Component;
 class Members extends Component
 {
     protected $listeners = ['memberWasCreated' => '$refresh'];
+    public $search="";
 
-    // public function memberWasCreated(){
-    //     $this->resetPage();
-    // }
-
+    protected $queryString = ['search'];
 
     public function render()
     {
-
-        $members = Member::all();
-
         return view('livewire.members', [
-            'members' => $members
-        ]);
+            'members' => Member::when(strlen($this->search) >= 2, function($query){
+                return $query->where('first_name', 'like', '%'.$this->search.'%');
+            })
+            ->orderBy('created_at', 'desc')
+            ->get()
+       ]);
     }
 }
