@@ -46,19 +46,3 @@ h1{
         }
     }
 }
-
-
-
-/* Your CSS for dropdown animation */
-.dropdown-enter-active {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .dropdown-enter {
-    opacity: 0;
-  }
-  .dropdown-leave-active {
-    transition: opacity 0.3s ease-in-out;
-  }
-  .dropdown-leave-to {
-    opacity: 0;
-  }

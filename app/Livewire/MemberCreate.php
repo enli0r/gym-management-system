@@ -23,6 +23,9 @@ class MemberCreate extends Component
     public $date_ended;
     public $is_active;
 
+    
+
+
     public function mount(){
         $this->date_started = Carbon::now();
         $this->date_ended = Carbon::now()->addDays(30);

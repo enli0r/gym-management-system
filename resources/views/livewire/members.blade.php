@@ -38,20 +38,19 @@
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
+
+            
             
             <div
             x-cloak
             x-show="showSort"
             x-on:click.away="showSort = false"
-
-            x-transition:enter="custom-enter" x-transition:enter-start="custom-enter" x-transition:enter-end="custom-enter-active" x-transition:leave="custom-leave" x-transition:leave-start="custom-leave" x-transition:leave-end="custom-leave-active"
-
             class="sort-container dropdown">
 
-                <ul class="sort-list">
-                    <li class="sort-item">Newest</li>
-                    <li class="sort-item">Oldest</li>
-                </ul>
+                <div class="sort-list">
+                    <li wire:click="changeOrder('desc')" class="sort-item">Newest</li>
+                    <li wire:click="changeOrder('asc')" class="sort-item">Oldest</li>
+                </div>
             </div>
         </div>
         
