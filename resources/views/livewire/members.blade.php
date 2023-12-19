@@ -18,7 +18,7 @@
         </div>
 
         <div 
-        x-data="{showSort:false}"
+        x-data="{showSort:false, showFilter:false}"
         class="table-actions">
             <div class="members-text">
                 <h1>All members</h1>
@@ -26,7 +26,9 @@
             </div>
             
             <div class="action-buttons">
-                <button class="filter-button">
+                <button 
+                x-on:click='showFilter =! showFilter'
+                class="filter-button">
                     Filter
                     <i class="fa-solid fa-bars-staggered"></i>
                 </button>
@@ -37,6 +39,45 @@
                     Sort
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
+            </div>
+
+            <div
+            x-cloak
+            x-show="showFilter"
+            x-on:click.away="showFilter = false"
+            class="filter-container">
+                <h3>Filter members</h3>
+
+
+                <form wire:submit.prevent="filter" action="" method="post">
+                    @csrf
+
+                    <input wire:model.live='first_name' class="text-input" type="search" name="first_name" id="" placeholder="First name">
+                    <input wire:model.live='last_name' class="text-input" type="search" name="last_name" id="" placeholder="Last name">
+                    <input wire:model.live='jmbg' class="text-input" type="search" name="jmbg" id="" placeholder="JMBG">
+                    <input wire:model.live='email' class="text-input" type="search" name="email" id="" placeholder="E-mail">
+
+                    <div class="more-filters">
+                        <div class="cnt">
+                            <label for="month_started">Enrolled in</label>
+                            <input wire:model.live='month_started' type="month" name="month_started">
+                        </div>
+                        
+                        
+                        <div class="cnt">
+                            <label for="activity">Activity</label>
+                            <select wire:model.live='activity' name="activity" id="activity">
+                                <option  value="1">Active</option>
+                                <option  value="0">Inactive</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+
+                                    
+
+                </form>
             </div>
 
             
